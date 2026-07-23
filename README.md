@@ -154,6 +154,15 @@ Ran 3 tests in 3.791s
 OK
 ```
 
+### 6. Prometheus & Grafana NOC Observability (Phase 5)
+Custom Python Prometheus exporter scraping real-time cell KPIs and powering auto-provisioned Grafana NOC dashboards:
+
+#### 📊 Grafana NOC Dashboard:
+![Grafana NOC Dashboard](docs/grafana-noc-dashboard.png)
+
+#### 📈 Prometheus Telemetry Metrics Endpoint (:8000):
+![Prometheus Metrics](docs/prometheus-kpi-metrics.png)
+
 ---
 
 ## ⚡ Quick Start & Local Deployment
