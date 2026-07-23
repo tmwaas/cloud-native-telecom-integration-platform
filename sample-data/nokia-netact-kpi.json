@@ -1,0 +1,7 @@
+{
+  "source_system": "Nokia_NetAct",
+  "node_type": "gNodeB",
+  "kpi_payload": [
+    {"cell_id": "DELFT-5G-04", "vendor": "Nokia", "drop_call_rate": 0.65, "latency_ms": 14, "active_users": 1150}
+  ]
+}

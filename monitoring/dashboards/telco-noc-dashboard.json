@@ -1,0 +1,42 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "title": "Telecom Multi-Vendor NOC Dashboard V2.0",
+  "tags": ["telecom", "5g", "mulesoft", "kafka"],
+  "timezone": "browser",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Drop Call Rate Anomaly (Multi-Vendor 5G)",
+      "type": "gauge",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "editorMode": "code",
+          "expr": "telco_drop_call_rate_percent",
+          "legendFormat": "{{cell_id}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "red", "value": 3.0 }
+            ]
+          },
+          "unit": "percent"
+        }
+      },
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 0 }
+    }
+  ]
+}

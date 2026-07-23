@@ -1,0 +1,35 @@
+#%RAML 1.0
+title: Telecom NOC Dashboard Experience API
+version: v2.0
+mediaType: application/json
+
+/telemetry/kpis:
+  get:
+    description: Get real-time multi-vendor cell KPIs for Grafana NOC Dashboard
+    responses:
+      200:
+        body:
+          example: |
+            {
+              "status": "SUCCESS",
+              "data": [
+                {"cellId": "DELFT-5G-03", "vendor": "Ericsson", "dropCallRate": 4.92, "status": "CRITICAL_ANOMALY"}
+              ]
+            }
+
+/alerts/remediation-webhook:
+  post:
+    description: Trigger automated closed-loop remediation from AI Engine
+    body:
+      application/json:
+        example: |
+          {
+            "cellId": "DELFT-5G-03",
+            "action": "RESTART_CELL_RADIO_INTERFACE",
+            "reason": "IsolationForest Anomaly Detected"
+          }
+    responses:
+      202:
+        body:
+          example: |
+            {"remediationStatus": "ACKNOWLEDGED", "ticketId": "INC-2026-9901"}

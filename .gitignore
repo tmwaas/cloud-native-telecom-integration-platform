@@ -1,0 +1,30 @@
+# Virtual Environment
+.venv/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS Specific Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+
+# Terraform Local State
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Log Files
+*.log
+
+# Sensitive Credentials / Local Envs
+.env
+*.pem
+*.key

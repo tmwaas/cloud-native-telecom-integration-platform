@@ -1,0 +1,7 @@
+{
+  "source_system": "Huawei_U2020",
+  "node_type": "gNodeB",
+  "kpi_payload": [
+    {"cell_id": "DELFT-5G-02", "vendor": "Huawei", "drop_call_rate": 1.12, "latency_ms": 18, "active_users": 890}
+  ]
+}

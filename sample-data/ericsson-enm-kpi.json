@@ -1,0 +1,8 @@
+{
+  "source_system": "Ericsson_ENM",
+  "node_type": "gNodeB",
+  "kpi_payload": [
+    {"cell_id": "DELFT-5G-01", "vendor": "Ericsson", "drop_call_rate": 0.42, "latency_ms": 12, "active_users": 1420},
+    {"cell_id": "DELFT-5G-03", "vendor": "Ericsson", "drop_call_rate": 4.92, "latency_ms": 85, "active_users": 3100}
+  ]
+}
